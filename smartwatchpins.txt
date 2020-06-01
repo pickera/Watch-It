@@ -1,0 +1,36 @@
+TOP BOARD
+Digital Outputs
+CS.OLED
+RESET.OLED
+DC.OLED
+[SPI]
+[I2C]
+SD.CS
+(Optional) Card Detect 1 and 2
+
+Digital inputs
+2x buttons
+Charge Status
+
+Analog Inputs
+Battery Monitor
+
+Analog Outputs
+
+
+BOTTOM BOARD
+General
+3.3V
+GND
+
+Digital Outputs
+LED
+[I2C]
+
+DIgital Inputs
+
+Analog Inputs
+TIA 
+PPG (Pulse sensor circuit Output)
+
+Analog Outputs
