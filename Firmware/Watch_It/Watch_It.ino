@@ -1,9 +1,14 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "Watch_It_Power.h"
 
+Watch_It_Power pwr;
+
+void setup() 
+{
+  pwr.begin();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
+void loop() 
+{
+  pwr.isCharging();
+  pwr.getBatteryVoltage();
 }
