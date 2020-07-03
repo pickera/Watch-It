@@ -1,0 +1,31 @@
+3.3V
+GND
+TIA
+PPG
+SDA
+SCL
+LED.CTRL
+
+5mm x 33 mm
+
+Power Management
+D27/CHRG.STATUS (Input)
+A4/BATT (Input)
+
+PPG Circuit
+D29/LED.CTRL (Output)
+A6/TIA (Input)
+A7/PPG (Input)
+
+OLED PINS
+D3/RESET.OLED (Output)
+D4/DC.OLED (Output)
+D16/CS.OLED (Output)
+
+SD Card Pins
+D5/CD1 (Input)
+D7/SD.CS (Output)
+
+Button Inputs
+D11/SW1 (Input)
+D15/SW2 (Input)

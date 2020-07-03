@@ -5031,7 +5031,7 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <text x="396.24" y="820.42" size="1.778" layer="97" ratio="15">Microcontroller Reset Circuit</text>
 <text x="396.24" y="812.8" size="1.27" layer="97">100nF+10K @ 3.3V =
 ~1.2ms to 0.7VCC</text>
-<text x="154.94" y="855.98" size="1.27" layer="97">SPECIAL / PORT / PIN ON PACKAGE / GPIO(D_or_A) / Comments
+<text x="152.4" y="853.44" size="1.27" layer="97">SPECIAL / PORT / PIN ON PACKAGE / GPIO(D_or_A) / Comments
 
 SDA / P0.25 / pin2 / D25
 SCL / P0.26 / pin3 / D26
@@ -5667,15 +5667,16 @@ way dynamically.</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="248.92" y1="810.26" x2="248.92" y2="807.72" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="830.58" x2="243.84" y2="815.34" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="815.34" x2="248.92" y2="815.34" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="815.34" x2="248.92" y2="810.26" width="0.1524" layer="91"/>
-<junction x="248.92" y="810.26"/>
-<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="815.34" x2="246.38" y2="815.34" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="815.34" x2="246.38" y2="810.26" width="0.1524" layer="91"/>
 <pinref part="XTAL2" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="810.26" x2="243.84" y2="810.26" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="810.26" x2="243.84" y2="810.26" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="P0.01/XL2"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="807.72" x2="248.92" y2="810.26" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="810.26" x2="246.38" y2="810.26" width="0.1524" layer="91"/>
+<junction x="246.38" y="810.26"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6240,9 +6241,9 @@ way dynamically.</text>
 <label x="279.4" y="845.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="480.06" y="822.96" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="D0/SPI_SCLK/I2C_SCK"/>
-<wire x1="505.46" y1="822.96" x2="480.06" y2="822.96" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="822.96" x2="500.38" y2="822.96" width="0.1524" layer="91"/>
+<label x="500.38" y="822.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="386.08" y1="713.74" x2="391.16" y2="713.74" width="0.1524" layer="91"/>
@@ -6257,9 +6258,9 @@ way dynamically.</text>
 <label x="279.4" y="848.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="480.06" y="820.42" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="D1/SPI_SDIN/I2C_SDA"/>
-<wire x1="505.46" y1="820.42" x2="480.06" y2="820.42" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="820.42" x2="500.38" y2="820.42" width="0.1524" layer="91"/>
+<label x="500.38" y="820.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="386.08" y1="716.28" x2="391.16" y2="716.28" width="0.1524" layer="91"/>
@@ -6326,20 +6327,6 @@ way dynamically.</text>
 <pinref part="CORTEX1" gate="G$1" pin="NC/TDI"/>
 </segment>
 </net>
-<net name="DC.OLED" class="0">
-<segment>
-<label x="480.06" y="830.58" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="DC/I2C_SA0"/>
-<wire x1="505.46" y1="830.58" x2="480.06" y2="830.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RESET.OLED" class="0">
-<segment>
-<label x="480.06" y="833.12" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="/RES"/>
-<wire x1="505.46" y1="833.12" x2="480.06" y2="833.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <wire x1="462.28" y1="840.74" x2="462.28" y2="835.66" width="0.1524" layer="91"/>
@@ -6399,13 +6386,6 @@ way dynamically.</text>
 <pinref part="C18" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="VCOMH"/>
 <wire x1="505.46" y1="800.1" x2="487.68" y2="800.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CS.OLED" class="0">
-<segment>
-<label x="480.06" y="835.66" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="/CS"/>
-<wire x1="505.46" y1="835.66" x2="480.06" y2="835.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CD2" class="0">
@@ -6561,18 +6541,6 @@ way dynamically.</text>
 <pinref part="U4" gate="G$1" pin="OSCI"/>
 </segment>
 </net>
-<net name="SW1" class="0">
-<segment>
-<pinref part="SW1" gate="G$1" pin="1"/>
-<wire x1="472.44" y1="736.6" x2="469.9" y2="736.6" width="0.1524" layer="91"/>
-<label x="469.9" y="736.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SW2" gate="G$1" pin="1"/>
-<wire x1="505.46" y1="736.6" x2="502.92" y2="736.6" width="0.1524" layer="91" style="longdash"/>
-<label x="502.92" y="736.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$23" class="0">
 <segment>
 <wire x1="220.98" y1="977.9" x2="213.36" y2="977.9" width="0.1524" layer="91"/>
@@ -6721,6 +6689,109 @@ way dynamically.</text>
 <pinref part="U2" gate="G$1" pin="P0.07"/>
 <wire x1="259.08" y1="830.58" x2="259.08" y2="828.04" width="0.1524" layer="91"/>
 <label x="259.08" y="828.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D5/CD1" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.05/AIN3"/>
+<wire x1="254" y1="830.58" x2="254" y2="828.04" width="0.1524" layer="91"/>
+<label x="254" y="828.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D11/SW1" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.11"/>
+<wire x1="276.86" y1="843.28" x2="279.4" y2="843.28" width="0.1524" layer="91"/>
+<label x="279.4" y="843.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="472.44" y1="736.6" x2="469.9" y2="736.6" width="0.1524" layer="91"/>
+<label x="469.9" y="736.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="D15/SW2" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.15"/>
+<wire x1="276.86" y1="853.44" x2="279.4" y2="853.44" width="0.1524" layer="91"/>
+<label x="279.4" y="853.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SW2" gate="G$1" pin="1"/>
+<wire x1="505.46" y1="736.6" x2="502.92" y2="736.6" width="0.1524" layer="91" style="longdash"/>
+<label x="502.92" y="736.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="D16/CS.OLED" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.16"/>
+<wire x1="276.86" y1="855.98" x2="279.4" y2="855.98" width="0.1524" layer="91"/>
+<label x="279.4" y="855.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="/CS"/>
+<wire x1="505.46" y1="835.66" x2="500.38" y2="835.66" width="0.1524" layer="91"/>
+<label x="500.38" y="835.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="D4/DC.OLED" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.04/AIN2"/>
+<wire x1="251.46" y1="830.58" x2="251.46" y2="828.04" width="0.1524" layer="91"/>
+<label x="251.46" y="828.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="DC/I2C_SA0"/>
+<wire x1="505.46" y1="830.58" x2="500.38" y2="830.58" width="0.1524" layer="91"/>
+<label x="500.38" y="830.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="D3/RESET.OLED" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.03/AIN1"/>
+<wire x1="248.92" y1="830.58" x2="248.92" y2="828.04" width="0.1524" layer="91"/>
+<label x="248.92" y="828.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="/RES"/>
+<wire x1="505.46" y1="833.12" x2="500.38" y2="833.12" width="0.1524" layer="91"/>
+<label x="500.38" y="833.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="D29/LED.CTRL" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.29/AIN5"/>
+<wire x1="231.14" y1="858.52" x2="228.6" y2="858.52" width="0.1524" layer="91"/>
+<label x="228.6" y="858.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="477.52" y1="985.52" x2="480.06" y2="985.52" width="0.1524" layer="91"/>
+<label x="480.06" y="985.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="A6/TIA" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.30/AIN6"/>
+<wire x1="231.14" y1="855.98" x2="228.6" y2="855.98" width="0.1524" layer="91"/>
+<label x="228.6" y="855.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="477.52" y1="982.98" x2="480.06" y2="982.98" width="0.1524" layer="91"/>
+<label x="480.06" y="982.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="A7/PPG" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.31/AIN7"/>
+<wire x1="231.14" y1="853.44" x2="228.6" y2="853.44" width="0.1524" layer="91"/>
+<label x="228.6" y="853.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="477.52" y1="988.06" x2="480.06" y2="988.06" width="0.1524" layer="91"/>
+<label x="480.06" y="988.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
